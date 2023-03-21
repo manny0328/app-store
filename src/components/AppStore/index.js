@@ -1,3 +1,13 @@
+import {Component} from 'react'
+
+import AppItem from '../AppItem'
+import TabItem from '../TabItem'
+
+import './index.css'
+
+const SEARCH_ICON_URL =
+  'https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png'
+
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
   {tabId: 'GAMES', displayText: 'Games'},
@@ -286,8 +296,6 @@ const appsList = [
     category: 'FOOD',
   },
 ]
-
-// Write your code here
 class AppStore extends Component {
   state = {
     searchInput: '',
